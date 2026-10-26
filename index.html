@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klutch Assist | VA by Kobi - Virtual Assistant</title>
+  <meta name="description" content="Reliable support, organized work, and more time for what matters. Professional transcription, proofreading, document formatting, and administrative support by Kobi." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236b21a8'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#faf5ff',
+              100: '#f3e8ff',
+              200: '#e9d5ff',
+              300: '#d8b4fe',
+              500: '#a855f7',
+              600: '#9333ea',
+              700: '#7e22ce',
+              800: '#6b21a8',
+              900: '#581c87',
+              950: '#3b0764',
+            },
+            warm: {
+              50: '#fdfbf7',
+              100: '#f8f4ec',
+              200: '#eee6d8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-brand {
+      background: linear-gradient(135deg, #581c87 0%, #7e22ce 50%, #9333ea 100%);
+    }
+    .gradient-hero {
+      background: radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.12) 0%, transparent 60%),
+                  radial-gradient(circle at 10% 80%, rgba(126, 34, 206, 0.08) 0%, transparent 50%),
+                  #fdfbf7;
+    }
+  </style>
+</head>
+<body class="font-sans bg-warm-50 text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-warm-50/90 backdrop-blur-md border-b border-brand-100/60">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-brand-900 text-white flex items-center justify-center font-serif font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+          K
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-xl tracking-tight text-brand-950">Klutch Assist</span>
+          <span class="text-xs uppercase tracking-widest text-brand-700 font-semibold">VA by Kobi</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#home" class="hover:text-brand-800 transition">Home</a>
+        <a href="#about" class="hover:text-brand-800 transition">About</a>
+        <a href="#services" class="hover:text-brand-800 transition">Services</a>
+        <a href="#skills" class="hover:text-brand-800 transition">Skills & Tools</a>
+        <a href="#portfolio" class="hover:text-brand-800 transition">Portfolio</a>
+        <a href="#process" class="hover:text-brand-800 transition">Process</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-800 text-white hover:bg-brand-900 shadow-sm hover:shadow transition-all">
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="relative gradient-hero pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden border-b border-brand-100/40">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+          
+          <div class="md:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 border border-brand-200 text-brand-900 text-xs font-semibold uppercase tracking-wider">
+              <span>✦</span> Your Virtual Assistant
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-slate-900 leading-[1.15]">
+              Reliable Support. Organized Work. 
+              <span class="block text-brand-800 italic font-normal mt-1">More Time for What Matters.</span>
+            </h1>
+            
+            <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+              Hi, I’m <strong>Kobi</strong>, the person behind <strong>Klutch Assist</strong>. I help busy professionals manage transcription, proofreading, document preparation, and administrative tasks with care and attention to detail.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="#contact" class="px-7 py-3.5 rounded-full font-semibold text-white bg-brand-800 hover:bg-brand-900 transition shadow-lg shadow-brand-900/15">
+                Let's Work Together
+              </a>
+              <a href="#services" class="px-7 py-3.5 rounded-full font-semibold text-brand-900 bg-white border border-brand-200 hover:bg-brand-50 transition">
+                Explore My Services
+              </a>
+            </div>
+
+            <p class="text-xs uppercase tracking-wider text-slate-400 font-medium pt-4">
+              Thoughtful virtual assistance for your everyday work.
+            </p>
+          </div>
+
+          <!-- Hero Brand Card -->
+          <div class="md:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-sm">
+              <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-brand-600 to-purple-300 opacity-20 blur-xl"></div>
+              <div class="relative bg-white border border-brand-100 rounded-3xl p-8 shadow-xl text-center">
+                <div class="w-28 h-28 mx-auto rounded-2xl bg-brand-900 text-white flex items-center justify-center font-serif text-5xl font-bold shadow-inner mb-6">
+                  K
+                </div>
+                <h3 class="font-serif font-bold text-2xl text-slate-900">Klutch Assist</h3>
+                <p class="text-brand-800 text-sm font-semibold tracking-wide uppercase mt-1">VA by Kobi</p>
+                <div class="my-6 border-t border-slate-100"></div>
+                <span class="inline-block px-4 py-2 rounded-full bg-brand-50 text-brand-900 text-xs font-bold uppercase tracking-wider border border-brand-200/60">
+                  “Consider It Klutched.”
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white border-b border-brand-100/50">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider">About Me</p>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">Meet the Person Behind Klutch Assist</h2>
+        </div>
+        <div class="prose prose-lg text-slate-600 mx-auto space-y-5 leading-relaxed text-center sm:text-left">
+          <p>
+            I'm <strong>Kobi</strong>, a Virtual Assistant focused on helping professionals keep their documents, information, and everyday tasks organized.
+          </p>
+          <p>
+            My strengths include transcription, proofreading, document handling, and written communication. I value accuracy, organization, and clear communication, and I approach each task with care and a willingness to learn.
+          </p>
+          <p>
+            Through Klutch Assist, I aim to provide dependable support that helps clients manage routine responsibilities and focus more of their time on their priorities.
+          </p>
+          <p>
+            I'm continuously developing my Virtual Assistant skills and expanding my ability to support clients with practical, organized solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-warm-50 border-b border-brand-100/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Services</p>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">How I Can Support Your Work</h2>
+          <p class="text-slate-600 mt-4">Practical, detail-focused assistance for documents, information, and everyday administrative tasks.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="bg-white p-8 rounded-2xl border border-brand-100 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xl mb-6">01</div>
+            <h3 class="font-serif font-bold text-xl text-slate-900 mb-3">Transcription</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Convert provided audio or video recordings into organized written documents, with attention to accuracy, clarity, and formatting.</p>
+            <ul class="space-y-2 text-sm text-slate-600 font-medium">
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Audio or video transcription</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Interview transcription</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Meeting notes from provided recordings</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Basic transcript formatting</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white p-8 rounded-2xl border border-brand-100 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xl mb-6">02</div>
+            <h3 class="font-serif font-bold text-xl text-slate-900 mb-3">Proofreading & Document Review</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Review written documents for spelling, grammar, punctuation, consistency, and readability while preserving the intended meaning.</p>
+            <ul class="space-y-2 text-sm text-slate-600 font-medium">
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Grammar and spelling checks</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Document proofreading</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Formatting consistency checks</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Basic written content review</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white p-8 rounded-2xl border border-brand-100 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xl mb-6">03</div>
+            <h3 class="font-serif font-bold text-xl text-slate-900 mb-3">Document & Data Support</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Help organize information and prepare clean, easy-to-follow documents and spreadsheets for everyday work.</p>
+            <ul class="space-y-2 text-sm text-slate-600 font-medium">
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Microsoft Word document formatting</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Google Docs formatting</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Microsoft Excel data entry</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Google Sheets data organization & cleanup</li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white p-8 rounded-2xl border border-brand-100 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xl mb-6">04</div>
+            <h3 class="font-serif font-bold text-xl text-slate-900 mb-3">General Administrative Support</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">Assist with routine organizational tasks that help keep everyday work structured and manageable.</p>
+            <ul class="space-y-2 text-sm text-slate-600 font-medium">
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Basic file and document organization</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Information entry and organization</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Simple research and information gathering</li>
+              <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Preparation of organized meeting notes</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="#contact" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-semibold text-white bg-brand-800 hover:bg-brand-900 transition">
+            Discuss Your Project
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section id="skills" class="py-24 bg-white border-b border-brand-100/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Skills & Tools</p>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">Skills That Keep Things Organized</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Core Skills -->
+          <div class="bg-warm-50 p-8 rounded-2xl border border-brand-100">
+            <h3 class="font-serif font-bold text-xl text-brand-950 mb-6">Core Skills</h3>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Transcription</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Proofreading & Grammar</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Document Formatting</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Data Entry</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Information Organization</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Written Communication</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Attention to Detail</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">MS Office Productivity</span>
+              <span class="px-3.5 py-1.5 rounded-lg bg-white border border-brand-200 text-slate-700 text-sm font-medium">Basic Canva Editing</span>
+            </div>
+          </div>
+
+          <!-- Tools I Use -->
+          <div class="bg-warm-50 p-8 rounded-2xl border border-brand-100 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif font-bold text-xl text-brand-950 mb-6">Tools I Use</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div class="p-3 bg-white border border-brand-200 rounded-lg text-sm font-semibold text-slate-800 text-center">Word</div>
+                <div class="p-3 bg-white border border-brand-200 rounded-lg text-sm font-semibold text-slate-800 text-center">Excel</div>
+                <div class="p-3 bg-white border border-brand-200 rounded-lg text-sm font-semibold text-slate-800 text-center">PowerPoint</div>
+                <div class="p-3 bg-white border border-brand-200 rounded-lg text-sm font-semibold text-slate-800 text-center">Google Docs</div>
+                <div class="p-3 bg-white border border-brand-200 rounded-lg text-sm font-semibold text-slate-800 text-center">Google Sheets</div>
+                <div class="p-3 bg-white border border-brand-200 rounded-lg text-sm font-semibold text-slate-800 text-center">Canva</div>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-200/60 text-xs text-slate-500 italic">
+              ChatGPT supports my workflow productivity; every single deliverable is personally reviewed and verified by me.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-warm-50 border-b border-brand-100/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Portfolio</p>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">See My Work in Action</h2>
+          <p class="text-slate-600 mt-4">Sample tasks that demonstrate my approach to clear documentation, organized information, and detail-focused support.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-2xl border border-brand-100 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between text-xs font-semibold mb-4">
+                <span class="text-brand-800 uppercase tracking-wider">Transcription</span>
+                <span class="text-slate-400 bg-slate-100 px-2 py-0.5 rounded">Practice Project</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-slate-900 mb-2">Transcription Demonstration</h3>
+              <p class="text-slate-600 text-sm mb-4">A short fictional interview transcribed with speaker labels, timestamps, and clean paragraph structure.</p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+              <span>• Speaker labels</span>
+              <span>• Consistent punctuation</span>
+              <span>• Clean formatting</span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-brand-100 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between text-xs font-semibold mb-4">
+                <span class="text-brand-800 uppercase tracking-wider">Proofreading</span>
+                <span class="text-slate-400 bg-slate-100 px-2 py-0.5 rounded">Practice Project</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-slate-900 mb-2">Proofreading & Document Cleanup</h3>
+              <p class="text-slate-600 text-sm mb-4">A before-and-after comparison of written documents corrected for grammar, punctuation, and structural flow.</p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+              <span>• Grammar checks</span>
+              <span>• Spelling corrections</span>
+              <span>• Readability</span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-brand-100 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center justify-between text-xs font-semibold mb-4">
+                <span class="text-brand-800 uppercase tracking-wider">Data Organization</span>
+                <span class="text-slate-400 bg-slate-100 px-2 py-0.5 rounded">Practice Project</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-slate-900 mb-2">Spreadsheet & Data Organization</h3>
+              <p class="text-slate-600 text-sm mb-4">Event registration records organized into a clean, consistent, and easy-to-scan tabular format.</p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+              <span>• Column hierarchy</span>
+              <span>• Standardized casing</span>
+              <span>• Error audits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Process -->
+    <section id="process" class="py-24 bg-white border-b border-brand-100/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider">My Process</p>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">A Simple, Organized Workflow</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 rounded-2xl border border-brand-100 bg-warm-50 relative">
+            <span class="font-serif text-3xl font-bold text-brand-300">01</span>
+            <h3 class="font-bold text-slate-900 text-lg mt-3 mb-2">Understand the Task</h3>
+            <p class="text-slate-600 text-sm">I learn about your needs, priorities, instructions, preferred format, and deadline.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-brand-100 bg-warm-50 relative">
+            <span class="font-serif text-3xl font-bold text-brand-300">02</span>
+            <h3 class="font-bold text-slate-900 text-lg mt-3 mb-2">Confirm the Details</h3>
+            <p class="text-slate-600 text-sm">We clarify the scope, required materials, expected deliverables, and timeline before work begins.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-brand-100 bg-warm-50 relative">
+            <span class="font-serif text-3xl font-bold text-brand-300">03</span>
+            <h3 class="font-bold text-slate-900 text-lg mt-3 mb-2">Complete the Work</h3>
+            <p class="text-slate-600 text-sm">I work through agreed tasks carefully, keeping records organized and checking the output for quality.</p>
+          </div>
+          <div class="p-6 rounded-2xl border border-brand-100 bg-warm-50 relative">
+            <span class="font-serif text-3xl font-bold text-brand-300">04</span>
+            <h3 class="font-bold text-slate-900 text-lg mt-3 mb-2">Review & Deliver</h3>
+            <p class="text-slate-600 text-sm">I deliver the agreed work in your requested format and handle any needed refinements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Work With Me -->
+    <section class="py-24 bg-warm-50 border-b border-brand-100/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Why Work With Me</p>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2">Support You Can Count On</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-2xl border border-brand-100 text-center">
+            <h3 class="font-bold text-slate-900 mb-2">Attention to Detail</h3>
+            <p class="text-slate-600 text-sm">I check documents and information carefully to support clarity and consistency.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-brand-100 text-center">
+            <h3 class="font-bold text-slate-900 mb-2">Organized Approach</h3>
+            <p class="text-slate-600 text-sm">I aim to keep tasks, files, and deliverables structured and easy to follow.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-brand-100 text-center">
+            <h3 class="font-bold text-slate-900 mb-2">Clear Communication</h3>
+            <p class="text-slate-600 text-sm">I value clear instructions, timely updates, and asking questions when details need clarity.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-brand-100 text-center">
+            <h3 class="font-bold text-slate-900 mb-2">Willingness to Learn</h3>
+            <p class="text-slate-600 text-sm">I'm committed to improving my skills and adapting quickly to your preferred workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <p class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Contact</p>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2 mb-4">Let's Get Your Tasks Organized</h2>
+        <p class="text-slate-600 text-lg leading-relaxed mb-8">
+          Have documents to prepare, recordings to transcribe, or administrative tasks that need attention? Tell me what you need help with, and let's discuss how Klutch Assist can support your work.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="mailto:vakobideguzman@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-semibold text-white bg-brand-800 hover:bg-brand-900 transition shadow-lg shadow-brand-900/15">
+            <span>✉</span> vakobideguzman@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/kobi-de-guzman-0a4a90213/" target="_blank" rel="noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full font-semibold text-brand-900 bg-brand-50 border border-brand-200 hover:bg-brand-100 transition">
+            <span>in</span> Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-950 text-white py-12 border-t border-brand-900">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-brand-800 text-white flex items-center justify-center font-serif font-bold text-lg">K</div>
+        <div>
+          <p class="font-serif font-bold text-lg leading-tight">Klutch Assist</p>
+          <p class="text-xs text-brand-300">Consider It Klutched.</p>
+        </div>
+      </div>
+      <p class="text-xs text-slate-400">© 2026 Klutch Assist by Kobi. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
